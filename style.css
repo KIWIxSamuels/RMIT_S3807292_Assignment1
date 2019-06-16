@@ -1,0 +1,341 @@
+/* CSS Variables */
+:root {
+  --primary: #9fdfbf;
+  --primary2: #d9f2e6;
+  --dark: #333;
+  --light: #fff;
+  --head-font:#ffcccc;
+  --button: #d9d9d9;
+  --profilecontainer: #00cc66;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: verdana, serif;
+  color: var(--dark);
+}
+
+body {
+  background: #e6e6e6;
+  margin: 30px 50px; /*30px is top and btm; 50px is L-R*/
+  line-height: 1.4;
+}
+
+.home-nav {
+  background: var(--dark);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--light);
+  text-transform: uppercase;
+  font-size: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.btn {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.6rem;
+  text-decoration: none;
+  border: 0;
+}
+
+.btn-info {
+  background: var(--button);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+/* Showcase */
+.showcase {
+  grid-area: showcase;
+  min-height: 800px;
+  background: url(img/weddingphoto.jpg);
+  background-size: cover;
+  background-position: left;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+.showcase h1 {
+  order: 2;
+  font-size: 5rem;
+  margin-bottom: 0;
+  color: var(--head-font);
+}
+
+.showcase p {
+  order: 1;
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: var(--head-font);
+}
+
+/*  Boxes */
+.info-boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+  background: var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+.btn1 {
+  background-color: var(--button);
+  color: var(--dark);
+  padding: 0.6rem 1.6rem;
+  text-decoration: none;
+  border: 0;
+}
+
+/*  Info */
+.info {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+
+.info2 {
+  background: var(--primary2);
+  box-shadow: var(--shadow);
+  display: inline;
+  grid-gap: 30px;
+  grid-template-columns: 1;
+  padding: 3rem;
+}
+
+.info3 {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  display: inline;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 3rem;
+}
+
+.info4 {
+  background: var(--primary2);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+
+.info5 {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  display: inline-block;
+  grid-gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 3rem;
+}
+
+.info6 {
+  background: var(--primary2);
+  box-shadow: var(--shadow);
+  display: inline;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+
+/*  Portfolio */
+.portfolio {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio img {
+  width: 100%;
+  box-shadow: var(--shadow);
+}
+
+/*---------------------------- Intro to IT ----------------------------*/
+
+.it-showcase {
+  grid-area: showcase;
+  min-height: 600px;
+  background: url(img/hs.jpg);
+  background-size: cover;
+  background-position: left;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  justify-content: top-left;
+  box-shadow: var(--shadow);
+}
+
+.it-showcase h1 {
+  order: 2;
+  font-size: 3rem;
+  margin-bottom: 0;
+  color: var(--light);
+}
+
+.it-showcase p {
+  order: 1;
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: var(--light);
+}
+
+/*---------------------------- Intro to IT ----------------------------*/
+
+/*---------------------------- Ideal Job ----------------------------*/
+.ideal-showcase {
+  grid-area: showcase;
+  min-height: 600px;
+  background: url(img/ge_springfield.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items:flex-start;
+  justify-content: bottom;
+  box-shadow: var(--shadow);
+}
+
+.ideal-showcase h1 {
+  order: 2;
+  font-size: 5rem;
+  margin-bottom: 0;
+  color: var(--light);
+}
+
+.ideal-showcase p {
+  order: 1;
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: var(--light);
+}
+
+/*---------------------------- Ideal Job ----------------------------*/
+
+/* ----------------------------Personal Profile ----------------------------*/
+.personalpro-showcase {
+  grid-area: showcase;
+  min-height: 600px;
+  background: url(img/familia.jpg);
+  background-size: cover;
+  background-position: left;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: bottom;
+  box-shadow: var(--shadow);
+}
+
+.personalpro-showcase h1 {
+  order: 2;
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: var(--light);
+}
+
+.personalpro-showcase p {
+  order: 1;
+  font-size: 2rem;
+  margin-top: 0;
+  color: var(--light);
+}
+
+/*---------------------------- Personal Profile ----------------------------*/
+
+/*----------------------------  Project Idea ----------------------------*/
+.projectidea-showcase {
+  grid-area: showcase;
+  min-height: 600px;
+  background: url(img/siteshed.jpg);
+  background-size: cover;
+  background-position: left;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: start;
+  justify-content: flex-end;
+  box-shadow: var(--shadow);
+}
+
+.projectidea-showcase h1 {
+  order: 2;
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: var(--light);
+}
+
+.projectidea-showcase p {
+  order: 1;
+  font-size: 2rem;
+  margin-top: 0;
+  color: var(--light);
+}
+/*---------------------------- Project Idea ----------------------------*/
+
+/*  Footer */
+footer {
+  margin-top: 2rem;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+
+/*  Media Queries */
+@media(max-width: 700px) {
+  .top-container {
+    grid-template-areas:
+      'showcase showcase'
+      'top-box-a top-box-b';
+  }
+
+
+.showcase h1 {
+  font-size: 2.5rem;
+}
+
+.info {
+  grid-template-columns: 1fr;
+  }
+  .info .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media(max-width: 500px) {
+  .top-container {
+    grid-template-areas:
+      'showcase'
+      'top-box-a'
+      'top-box-b';
+}
